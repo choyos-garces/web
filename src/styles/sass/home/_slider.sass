@@ -1,0 +1,62 @@
+div#slider
+  overflow: hidden
+  position: relative
+  color: #fff
+
+  div.img-wrapper
+    +absolute(0,0,0,0)
+
+    img
+      margin: auto
+
+  div.vignette
+    z-index: 1
+    +absolute(0,0,0,0)
+    background: radial-gradient(ellipse at center, rgba(0,0,0,.3) 25%, rgba(0,0,0,.8) 100%)
+
+  div#welcome-message
+    position: relative
+    z-index: 2
+
+    div#welcome-message-wrapper
+      max-width: 490px
+      margin: 200px auto 40px auto
+      text-shadow: $shadow-font-dark
+
+      img
+        width: 225px
+        height: 225px
+        -webkit-filter: drop-shadow($shadow-wide)
+
+      h1
+        font-family: "Museo Slab", sans-serif
+        font-weight: 700
+        font-style: normal
+        font-size: 38pt
+        margin-bottom: 10px
+
+      h1:after
+        +absolute(-15px !important,0 !important,auto !important,0 !important)
+
+      p
+        opacity: .7
+        color: inherit
+        font-size: $font-size-medium
+        font-style: italic
+
+@media screen and (max-width: 990px)
+  div#slider
+
+    div#welcome-message
+
+      div#welcome-message-wrapper
+        margin: 60px auto 20px auto
+        text-shadow: $shadow-font-dark
+
+        img
+          width: 100px !important
+          height: 100px
+
+        h1:after
+          background: none
+          box-shadow: none

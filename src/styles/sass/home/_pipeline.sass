@@ -1,0 +1,27 @@
+div#pipeline
+
+  div.item
+    background: #fff
+    box-shadow: $shadow-regular
+    margin-bottom: 20px
+    border-radius: $border-radius
+    overflow: hidden
+
+    div.item-image
+      height: 250px
+      overflow: hidden
+
+      img
+        width: 100%
+
+    div.item-content
+      position: relative
+      padding: 2.5em 2em 2em
+
+      h3
+        +absolute(-60px, 1em, auto, 0)
+        color: #fff
+        text-shadow: $shadow-font-dark
+
+      p
+        font-size: $font-size-small

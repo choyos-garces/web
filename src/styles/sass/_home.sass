@@ -1,0 +1,19 @@
+main
+  @import "home/slider"
+  @import "home/pipeline"
+  @import "home/_certifications"
+  @import "home/ourStaff"
+  @import "home/history"
+
+  div.read-more
+    padding: 2em 3em
+    text-align: right
+
+    a
+      color: inherit
+
+@media screen and (max-width: 768px)
+  main
+    div.read-more
+      padding: 2em 0
+      text-align: center

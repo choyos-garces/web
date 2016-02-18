@@ -1,0 +1,38 @@
+div#our-staff
+  overflow: hidden
+  position: relative
+  color: #fff
+
+  div#mask
+    background: rgba(0,0,0,.6)
+    +absolute(0,0,0,0)
+
+  div.img-wrapper
+    +absolute(0, -999px, 0, -999px)
+    text-align: center
+    z-index: -1
+
+  div#quotes
+    text-shadow: $shadow-wide
+    padding-top: 20px
+
+    blockquote
+      border: none
+      font-size: $font-size-medium
+      line-height: 1.8
+      text-align: center
+
+      q
+        font-size: $font-size-large
+
+      footer
+        color: inherit
+        opacity: .6
+        font-style: italic
+
+@media screen and (max-width: 990px)
+  div#our-staff
+    div#quotes
+      blockquote
+        q
+          font-size: $font-size-regular

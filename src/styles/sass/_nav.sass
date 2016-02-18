@@ -1,0 +1,120 @@
+div#nav-full
+  position: fixed
+  z-index: 399
+  background: rgba(255,255,255,.95)
+  top: 0
+  right: 0
+  left: 0
+  bottom: 0
+  overflow: hidden
+  color: #333
+  text-align: center
+  font-size: $font-size-large
+  transition: all 300ms cubic-bezier(.17,.67,.83,.67)
+
+  div#nav-full-close
+    padding: 12px 20px
+
+    img
+      width: 48px
+      height: 48px
+
+  ul
+    margin: 0
+    padding: 0
+    list-style: none
+
+    li
+      margin: 0
+      padding: 20px 0
+
+div#nav-full.closet-hide
+  bottom: 100%
+  opacity: 0
+
+nav
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  background-color: rgba(0,0,0,0)
+  text-align: right
+  color: #fff
+  z-index: 399
+  border-bottom: 1px solid rgba(255,255,255,0)
+
+  div.container
+    position: relative
+
+    div.label
+      display: none
+      +absolute(0,0,0,0)
+      font-size: $font-size-large
+      text-align: center
+      color: #333
+      padding: .65em 0 0
+      font-family: "Museo Slab", sans-serif
+      z-index: -1
+
+
+  div#logo
+    position: absolute
+    height: 60px
+    width: 60px
+    display: none
+
+    img
+      margin: 15px
+
+  ul.menu-items
+    font-size: 0
+    margin: 0
+    padding: 0
+
+    li
+      padding: 16px 14px
+      +inline-block($font-size-regular)
+
+    li:not(.menu)
+      display: none
+
+nav.fixed
+  color: #333
+  position: fixed
+  background: #fff
+  border-bottom: 1px solid $border-grey
+  transition: all 600ms cubic-bezier(.17,.67,.83,.67)
+
+  div#logo
+    display: block
+
+  ul.menu-items
+    display: inline-block
+
+    li.menu
+      display: none
+
+    li:not(.menu)
+      display: inline-block
+
+@media screen and (max-width: 990px)
+  nav.fixed
+    div.container
+
+      div.label
+        display: block
+
+        span.green
+          color: $accent-green
+
+        span.blue
+          color: $accent-blue
+
+    ul.menu-items
+      display: inline-block
+
+      li.menu
+        display: block !important
+
+      li:not(.menu)
+        display: none !important
