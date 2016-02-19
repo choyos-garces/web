@@ -4,7 +4,7 @@ module.exports = function(grunt) {
             main: {
                 src: [
                     'src/app/**/*.ts',
-                    'typings/main.d.ts',
+                    'typings/main.d.ts'
                 ],
                 dest: 'build/app/',
                 options: {
@@ -28,7 +28,7 @@ module.exports = function(grunt) {
                     style: "compressed"
                 },
                 files: {
-                    'build/styles/default.css': 'src/styles/sass/default.sass',
+                    'build/styles/default.css': 'src/styles/sass/default.sass'
                 }
             }
         },
@@ -93,8 +93,11 @@ module.exports = function(grunt) {
                 files: ['src/app/**/*.ts'],
                 tasks: ['typescript']
             }
-        },
+        }
     });
+
+    grunt.registerTask("build", ["typescript", "sass", "copy"]);
+    grunt.registerTask("start", ["build", "watch"]);
 
     grunt.loadNpmTasks("grunt-typescript");
     grunt.loadNpmTasks("grunt-contrib-sass");
