@@ -1,16 +1,20 @@
 {
-  "name": "hyg_web",
+  "name": "web",
   "version": "1.0.0",
-  "description": "Pagina de Hoyos Garces sA",
-  "main": "index.js",
+  "description": "Pagina de Hoyos Garces SA",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "hyg"
+    "hoyosgarces", "web"
   ],
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/choyos-garces/web.git"
+  }
   "author": "choyos",
-  "license": "ISC",
+  "license": "UNLICENSED",
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-contrib-concat": "^0.5.1",
