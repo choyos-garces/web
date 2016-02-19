@@ -4,7 +4,7 @@ Webpage for [Hoyos Garces](hoyosgarces.com)
 
 
 ##Requirement
-Build with angular2-beta.6. To install dependencies run ` npm install `. If `typings` is instal globaly then just run `typings install`, esle do `npm run typings install`
+Build with angular2-beta.6. To install dependencies run ` npm install ` then install `typings install`.
 
 ##Commands
 To clean and build ` grunt build `.
