@@ -93,16 +93,31 @@ module.exports = function(grunt) {
                 files: ['src/app/**/*.ts'],
                 tasks: ['typescript']
             }
+        },
+
+        browserSync: {
+            dev: {
+                bsFiles: {
+                    src: [
+                        'build/**/*'
+                    ]
+                },
+                options: {
+                    watchTask: true,
+                    proxy: 'http://localhost/web'
+                }
+            }
         }
     });
 
     grunt.registerTask("build", ["typescript", "sass", "copy"]);
     grunt.registerTask("start", ["build", "watch"]);
+    grunt.registerTask("server", ["build", "browserSync", "watch"]);
 
     grunt.loadNpmTasks("grunt-typescript");
     grunt.loadNpmTasks("grunt-contrib-sass");
     grunt.loadNpmTasks("grunt-contrib-copy");
     grunt.loadNpmTasks("grunt-contrib-watch");
     grunt.loadNpmTasks("grunt-contrib-concat");
-
+    grunt.loadNpmTasks("grunt-browser-sync");
 };
