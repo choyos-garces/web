@@ -11,7 +11,7 @@ module.exports = function(grunt) {
                     target: 'ES5',
                     module: 'commonjs',
                     moduleResolution: 'node',
-                    sourceMap: true,
+                    sourceMap: false,
                     experimentalDecorators: true,
                     emitDecoratorMetadata: true,
                     removeComents: false,
@@ -25,7 +25,8 @@ module.exports = function(grunt) {
             dist: {
                 options: {
                     trace: true,
-                    style: "compressed"
+                    style: "compressed",
+                    sourcemap: "none"
                 },
                 files: {
                     'build/styles/default.css': 'src/styles/sass/default.sass'

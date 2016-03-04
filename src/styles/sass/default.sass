@@ -18,34 +18,9 @@ a
 a:hover
   text-decoration: underline
 
-h1, h2, h3
-  font-family: "Museo Slab", serif
+h1, h2
+  margin: 0
   font-weight: 500
-
-h1
-  position: relative
-  margin: 25px auto 35px
-  color: $accent-blue
-  display: inline-block
-
-h1:after
-  content: ''
-  background: $accent-green
-  height: 3px
-  margin: auto
-  width: 100px
-  +absolute(auto, 0, -15px, 0)
-
-h1.foreground
-  color: #fff
-
-h1.foreground:after
-  background: #fff
-  box-shadow: $shadow-wide
-
-p
-  color: #999
-  line-height: 1.8
 
 .locked
   overflow: hidden

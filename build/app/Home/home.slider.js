@@ -25,11 +25,10 @@ var HomeSlider = (function () {
     HomeSlider = __decorate([
         core_1.Component({
             selector: 'home-slider',
-            template: "\n    <div id=\"slider\">\n        <div class=\"vignette\"></div>\n        <div class=\"img-wrapper\">\n            <img src=\"img/slider/bananera.jpg\" />\n        </div>\n        <div id=\"welcome-message\" class=\"wrapper\">\n            <div id=\"welcome-message-wrapper\">\n                <div class=\"text-center\">\n                    <img src=\"img/logo-white.svg\">\n                </div>\n                <div class=\"text-center\">\n                    <h1 class=\"foreground\">HoyosGarc&eacute;s</h1>\n                </div>\n                <p class=\"text-center\">\n                    Love life, love Bananas!\n                </p>\n            </div>\n        </div>\n    </div>\n    "
+            template: "\n    <div id=\"slider\">\n            <div id=\"welcome-message\" class=\"container\">\n                <div class=\"text-center\">\n                    <img id=\"slider-logo\" src=\"img/logo-white.svg\" />\n                </div>\n                <h1>From our family to your table.</h1>\n                <p>Top Quality and Affordable ecuadorian bananas.</p>\n                <div class=\"text-center\">\n                    <button class=\"btn btn-primary\">Learn more about our history</button>\n                </div>\n            </div>\n    </div>\n    "
         }), 
         __metadata('design:paramtypes', [])
     ], HomeSlider);
     return HomeSlider;
 })();
 exports.HomeSlider = HomeSlider;
-//# sourceMappingURL=home.slider.js.map

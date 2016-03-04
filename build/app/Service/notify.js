@@ -10,4 +10,3 @@ var Notify = (function () {
     return Notify;
 })();
 exports.Notify = Notify;
-//# sourceMappingURL=notify.js.map

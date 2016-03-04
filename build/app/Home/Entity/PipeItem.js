@@ -17,4 +17,3 @@ var PipeItem = (function () {
     return PipeItem;
 })();
 exports.PipeItem = PipeItem;
-//# sourceMappingURL=PipeItem.js.map

@@ -60,4 +60,3 @@ var FooterMailer = (function () {
     return FooterMailer;
 })();
 exports.FooterMailer = FooterMailer;
-//# sourceMappingURL=footer.mailer.js.map

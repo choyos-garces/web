@@ -6,4 +6,3 @@ var NavItem = (function () {
     return NavItem;
 })();
 exports.NavItem = NavItem;
-//# sourceMappingURL=NavItem.js.map

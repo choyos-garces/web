@@ -7,4 +7,3 @@ var Partner = (function () {
     return Partner;
 })();
 exports.Partner = Partner;
-//# sourceMappingURL=Partner.js.map

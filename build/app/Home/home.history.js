@@ -23,4 +23,3 @@ var HomeHistory = (function () {
     return HomeHistory;
 })();
 exports.HomeHistory = HomeHistory;
-//# sourceMappingURL=home.history.js.map

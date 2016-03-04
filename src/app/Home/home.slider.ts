@@ -4,23 +4,16 @@ import {Component} from 'angular2/core'
     selector: 'home-slider',
     template: `
     <div id="slider">
-        <div class="vignette"></div>
-        <div class="img-wrapper">
-            <img src="img/slider/bananera.jpg" />
-        </div>
-        <div id="welcome-message" class="wrapper">
-            <div id="welcome-message-wrapper">
+            <div id="welcome-message" class="container">
                 <div class="text-center">
-                    <img src="img/logo-white.svg">
+                    <img id="slider-logo" src="img/logo-white.svg" />
                 </div>
+                <h1>From our family to your table.</h1>
+                <p>Top Quality and Affordable ecuadorian bananas.</p>
                 <div class="text-center">
-                    <h1 class="foreground">HoyosGarc&eacute;s</h1>
+                    <button class="btn btn-primary">Learn more about our history</button>
                 </div>
-                <p class="text-center">
-                    Love life, love Bananas!
-                </p>
             </div>
-        </div>
     </div>
     `
 })
