@@ -10,7 +10,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('angular2/core');
-var Partner_1 = require("./Entity/Partner");
+var Partner_1 = require("./Interface/Partner");
 var HomeReferences = (function () {
     function HomeReferences() {
         var base_dir = "img/partners/";

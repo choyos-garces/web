@@ -1,5 +1,5 @@
 import {Component} from 'angular2/core'
-import {Partner} from "./Entity/Partner";
+import {Partner} from "./Interface/Partner";
 
 @Component({
     selector: 'home-references',

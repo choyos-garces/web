@@ -1,5 +1,5 @@
 import {Component} from 'angular2/core'
-import {PipeItem} from "./Entity/PipeItem";
+import {PipeItem} from "./Interface/PipeItem";
 
 @Component({
     selector: 'home-pipeline',

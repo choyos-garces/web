@@ -11,18 +11,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('angular2/core');
 var home_slider_1 = require('./home.slider');
-var home_pipeline_1 = require("./home.pipeline");
-var home_history_1 = require("./home.history");
-var home_ourStaff_1 = require("./home.ourStaff");
-var home_certifications_1 = require("./home.certifications");
+var home_compromise_1 = require("./home.compromise");
+var home_article_1 = require("./Interface/home.article");
 var Home = (function () {
     function Home() {
     }
     Home = __decorate([
         core_1.Component({
             selector: 'home-core',
-            template: "\n    <main>\n        <home-slider></home-slider>\n        <home-pipeline></home-pipeline>\n        <home-certifications></home-certifications>\n        <home-our-staff></home-our-staff>\n        <home-history></home-history>\n    </main>\n    ",
-            directives: [home_slider_1.HomeSlider, home_pipeline_1.HomePipeline, home_certifications_1.HomeCertifications, home_ourStaff_1.HomeOurStaff, home_history_1.HomeHistory]
+            template: "\n    <main>\n        <home-slider></home-slider>\n        <home-compromise></home-compromise>\n        <home-article></home-article>\n    </main>\n    ",
+            directives: [home_slider_1.HomeSlider, home_compromise_1.HomeCompromise, home_article_1.HomeArticle]
         }), 
         __metadata('design:paramtypes', [])
     ], Home);

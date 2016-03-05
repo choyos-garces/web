@@ -1,6 +1,7 @@
 nav
   font-size: 18px
   color: #fff
+  text-shadow: $shadow-regular
   +absolute(0, 0, auto, 0)
   z-index: 1
   height: 56px
@@ -25,30 +26,11 @@ nav
         +inline-block(18px)
 
 nav.fixed
-  color: #333
+  color: inherit
+  text-shadow: none
   position: fixed
   background: #fff
   border-bottom: 1px solid $border-grey
   transition: all 600ms cubic-bezier(.17,.67,.83,.67)
 
 @media screen and (max-width: 990px)
-  nav.fixed
-    div.container
-
-      div.label
-        display: block
-
-        span.green
-          color: $accent-green
-
-        span.blue
-          color: $accent-blue
-
-    ul.menu-items
-      display: inline-block
-
-      li.menu
-        display: block !important
-
-      li:not(.menu)
-        display: none !important

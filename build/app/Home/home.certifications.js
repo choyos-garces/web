@@ -10,7 +10,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('angular2/core');
-var Certification_1 = require("./Entity/Certification");
+var Certification_1 = require("./Interface/Certification");
 var HomeCertifications = (function () {
     function HomeCertifications() {
         this.certifications = [];

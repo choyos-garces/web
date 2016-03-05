@@ -1,5 +1,5 @@
 import {Component} from 'angular2/core'
-import {Certification} from "./Entity/Certification";
+import {Certification} from "./Interface/Certification";
 
 @Component({
     selector: 'home-certifications',
