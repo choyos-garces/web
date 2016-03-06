@@ -6,15 +6,19 @@ import {Component} from 'angular2/core'
     <div id="article" class="section">
         <div class="container">
             <div class="row">
-                <div class="col-md-2 hidden-md hidden-sm hidden-xs text-center">
-                    <img src="img/sticker-organic-medium.svg" />
-                </div>
-                <div class="col-sm-6 col-md-4 col-sm-pull-6 col-sm-push-4">
-                    <div id="article-carousel">
-                        <img src="img/history/freddy.jpg"/>
+                <div class="col-md-2 visible-md-block visible-lg-block">
+                    <div class="text-center">
+                        <img src="img/sticker-organic-medium.svg" />
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 col-sm-pull-6 col-sm-pull-4">
+                <div class="col-md-4 col-md-push-4">
+                    <div id="article-carousel">
+                        <div id="article-carousel-fix" class="text-center">
+                            <img src="img/history/freddy.jpg"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-md-pull-4">
                     <h1>{{ title }}</h1>
                     <p class="context">{{ body }}</p>
                 </div>

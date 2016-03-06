@@ -1,10 +1,8 @@
 import {Component} from 'angular2/core'
 import {HomeSlider} from './home.slider'
-import {HomeHistory} from "./home.history";
-import {HomeOurStaff} from "./home.ourStaff";
-import {HomeCertifications} from "./home.certifications";
 import {HomeCompromise} from "./home.compromise";
-import {HomeArticle} from "./Interface/home.article";
+import {HomeArticle} from "./home.article";
+import {HomePipeline} from "./home.pipeline";
 
 @Component({
     selector: 'home-core',
@@ -13,9 +11,10 @@ import {HomeArticle} from "./Interface/home.article";
         <home-slider></home-slider>
         <home-compromise></home-compromise>
         <home-article></home-article>
+        <home-pipeline></home-pipeline>
     </main>
     `,
-    directives: [HomeSlider, HomeCompromise, HomeArticle]
+    directives: [HomeSlider, HomeCompromise, HomeArticle, HomePipeline]
 })
 export class Home {
 

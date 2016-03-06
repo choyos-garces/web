@@ -10,27 +10,27 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('angular2/core');
-var PipeItem_1 = require("./Interface/PipeItem");
+var Pipeline_1 = require("./Interface/Pipeline");
 var HomePipeline = (function () {
     function HomePipeline() {
         this.messages = [];
-        var image = "bananas.jpg";
-        var title = "Outstanding Quality";
-        var message = "Rest assured that the highest international quality standards are maintained in all our plantations. From the time of plantation, harvesting and finally the packaging, our team takes care that the product is of the highest quality.";
-        this.messages.push(new PipeItem_1.PipeItem(title, message, image));
-        var image = "parqueadero.jpg";
-        var title = "Plenty of Experience";
-        var message = "With more than three generations of experience in the care and maintenance of bananas farms, we can guarantee that our product is the best. Time has taught us to reap great benefit and with minimum impact within our plantations.";
-        this.messages.push(new PipeItem_1.PipeItem(title, message, image));
-        var image = "hoja.jpg";
-        var title = "Our Compromise";
-        var message = "Our level of compromise starts from our farms, on each box and every container. For us communication is key with our employees, providers and clients. Our goal is to provide an outstanding product that will exceed our customer's expectations.";
-        this.messages.push(new PipeItem_1.PipeItem(title, message, image));
+        var image = "pipeline_guarantee";
+        var title = "Our 100% organic production.";
+        var message = "Our flag ship product, verified by numerous certidfications. We can guarantee that quality of our organic bananas is the best in the region. Take some time to read our fruit specifitacions or contact us, you wont regret it.";
+        this.messages.push(new Pipeline_1.Pipeline(title, message, image));
+        var image = "pipeline_premium";
+        var title = "Convencional Premium bananas.";
+        var message = "Our convencional bananas providiers go through some rigurous selection process. You can expect similar quality from our organic products at a more affordable prices. Read about our selection process and meet our staff in charge.";
+        this.messages.push(new Pipeline_1.Pipeline(title, message, image));
+        var image = "pipeline_global";
+        var title = "To Europe, Middle East, USA and more.";
+        var message = "Hemos exportado a todos estos lugares con excelents resultados. Con nuestra propia marca o como proveedores, nunca hemos tenido algun invonveniente con nuestros cliente. Conoce al equipo responsable de este proceso.";
+        this.messages.push(new Pipeline_1.Pipeline(title, message, image));
     }
     HomePipeline = __decorate([
         core_1.Component({
             selector: 'home-pipeline',
-            template: "\n    <div id=\"pipeline\" class=\"container\">\n        <div class=\"text-center\">\n            <h1>Only the very best</h1>\n        </div>\n        <div class=\"col-md-4\" *ngFor=\"#item of messages\">\n            <div class=\"item\">\n                <div class=\"item-image\">\n                    <img src=\"{{ item.image }}\">\n                </div>\n                <div class=\"item-content\">\n                    <h3>{{ item.title }}</h3>\n                    <p>\n                        {{ item.message }}\n                    </p>\n                </div>\n            </div>\n        </div>\n        <div class=\"read-more\">\n            <a href=\"#\">Read More <i class=\"fa fa-long-arrow-right\"></i></a>\n        </div>\n    </div>\n    "
+            template: "\n    <div id=\"pipeline\" class=\"section\">\n        <div class=\"container\">\n            <div class=\"row\">\n                <div class=\"col-md-4\" *ngFor=\"#item of messages\">\n                    <div id=\"pipeline-item\">\n                        <div class=\"text-center\">\n                            <img src=\"{{ item.image }}\">\n                        </div>\n                        <h2>{{ item.title }}</h2>\n                        <p class=\"context\">\n                            {{ item.message }}\n                        </p>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n    "
         }), 
         __metadata('design:paramtypes', [])
     ], HomePipeline);

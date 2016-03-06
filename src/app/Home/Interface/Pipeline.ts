@@ -1,4 +1,4 @@
-export class PipeItem {
+export class Pipeline {
     private title : string;
     private message : string;
     private image : string;
@@ -6,9 +6,9 @@ export class PipeItem {
     constructor(title : string, message : string, image : string) {
 
         let baseURL = "img/pipeline/";
-
+        let type = ".svg"
         this.title = title;
-        this.image = baseURL + image;
+        this.image = baseURL + image + type;
         this.message = message;
     }
 

@@ -1,8 +1,12 @@
 div#article
 
   div#article-carousel
-    position: absolute
+    position: relative
+    height: 250px
     width: 100%
     background-color: $neutral-grey
     border-radius: $border-radius
     overflow: hidden
+
+    div#article-carousel-fix
+      +absolute(0,-999px,0,-999px)
