@@ -6,24 +6,29 @@ nav
   z-index: 1
   height: 56px
   line-height: 56px
+  transition: background 300ms cubic-bezier(.17,.67,.83,.67), border 300ms cubic-bezier(.17,.67,.83,.67)
 
   div.container
     position: relative
 
-    span
-      font-family: "Museo Slab", sans-serif
-      font-weight: 500
+  span
+    font-family: "Museo Slab", sans-serif
+    font-weight: 500
 
-    ul
-      +absolute(0, auto, auto, 0)
-      font-size: 0
-      margin: 0
-      padding: 0
+  ul
+    +absolute(0, auto, auto, 0)
+    font-size: 0
+    margin: 0
+    padding: 0
 
-      li
-        padding: 0 12px
-        font-weight: 700
-        +inline-block(18px)
+  li
+    padding: 0 12px
+    font-weight: 700
+    +inline-block(18px)
+
+  li#nav-toggle
+    display: none
+    cursor: pointer
 
 nav.fixed
   color: inherit
@@ -31,6 +36,48 @@ nav.fixed
   position: fixed
   background: #fff
   border-bottom: 1px solid $border-grey
-  transition: all 600ms cubic-bezier(.17,.67,.83,.67)
 
-@media screen and (max-width: 990px)
+@media screen and (max-width: 768px)
+  nav
+    ul
+      li#nav-toggle
+        display: block
+
+      height: 56px
+      overflow: hidden
+      left: 0
+
+      li.nav-collapse
+        height: 0
+
+    ul.expand
+      height: auto
+
+      li.nav-collapse
+        transition: height 300ms cubic-bezier(.17,.67,.83,.67)
+        height: 56px
+
+    li
+      color: inherit
+      display: block
+      text-align: right
+
+    li.nav-collapse
+      padding-right: 24px
+      background-color: rgba(0,0,0,.3)
+
+    li.nav-collapse:hover
+      background-color: rgba(0,0,0,.5)
+
+  nav.fixed
+    ul
+      border-bottom: 1px solid $border-grey
+
+    li.nav-collapse
+      color: inherit
+      background-color: #fff
+      text-shadow: none
+
+    li.nav-collapse:hover
+      color: $neutral-grey
+      background-color: $light-grey

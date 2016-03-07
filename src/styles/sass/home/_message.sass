@@ -1,0 +1,45 @@
+div#message
+  color: #fff
+  background: $accent-green url("../img/message/cajas.jpg")
+  padding: 60px 0
+
+  input[type="text"], input[type="email"], textarea
+    font-size: 16px
+    color: inherit
+    border: 2px solid #fff
+    border-radius: 3px
+    background: none
+    box-shadow: none
+
+  .form-control::-webkit-input-placeholder
+    color: #fff
+    opacity: .9
+  .form-control:-moz-placeholder
+    color: #fff
+    opacity: .9
+  .form-control::-moz-placeholder
+    color: #fff
+    opacity: .9
+  .form-control:-ms-input-placeholder
+    color: #fff
+    opacity: .9
+
+  textarea
+    height: 82px
+    max-height: 82px
+    resize: none
+
+  div#contact-icons
+    a:hover
+      color: $accent-blue
+
+    i
+      margin: 24px 24px 0
+
+@media screen and (max-width: 768px)
+  div#message
+    padding: 24px 0
+
+    div#contact-icons
+      i
+        margin: 12px 24px 0

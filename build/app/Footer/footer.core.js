@@ -16,7 +16,7 @@ var Footer = (function () {
     Footer = __decorate([
         core_1.Component({
             selector: 'footer-core',
-            template: "\n    <footer id=\"footer\">\n        <div class=\"container\">\n            <span class=\"context\">&copy; 2012-2016 HoyosGarc&eacute;s S.A. All rights reserved.</span>\n        </div>\n    </footer>\n    ",
+            template: "\n    <footer id=\"footer\">\n        <div class=\"container\">\n            <div>&copy; 2016 <strong>HoyosGarc&eacute;s S.A.</strong> All rights reserved.</div>\n        </div>\n    </footer>\n    ",
         }), 
         __metadata('design:paramtypes', [])
     ], Footer);

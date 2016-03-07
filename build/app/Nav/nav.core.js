@@ -25,10 +25,14 @@ var Nav = (function () {
         var l = "Products";
         this.navItems.push(new NavItem_1.NavItem(u, l));
     }
+    Nav.prototype.toggleNav = function () {
+        var cont = document.querySelector("#nav-items");
+        cont.classList.toggle("expand");
+    };
     Nav = __decorate([
         core_1.Component({
             selector: 'nav-core',
-            template: "\n    <nav>\n        <div class=\"container\">\n            <span class=\"company-name\">\n                HoyosGarc&eacute;s\n            </span>\n            <ul class=\"menu-items\">\n                <li *ngFor=\"#item of navItems\">\n                    <a href=\"{{ item.url }}\">{{ item.label }}</a>\n                </li>\n            </ul>\n        </div>\n    </nav>\n    ",
+            template: "\n    <nav>\n        <div class=\"container\">\n            <span class=\"company-name\">\n                HoyosGarc&eacute;s\n            </span>\n            <ul id=\"nav-items\">\n                <li id=\"nav-toggle\" (click)=\"toggleNav()\">\n                    <i class=\"fa fa-navicon\"></i>\n                </li>\n                <li class=\"nav-collapse\" *ngFor=\"#item of navItems\">\n                    <a href=\"{{ item.url }}\">{{ item.label }}</a>\n                </li>\n            </ul>\n        </div>\n    </nav>\n    ",
             directives: [common_1.NgFor]
         }), 
         __metadata('design:paramtypes', [])

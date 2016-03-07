@@ -5,7 +5,7 @@ import {Component} from "angular2/core";
     template: `
     <footer id="footer">
         <div class="container">
-            <span class="context">&copy; 2012-2016 HoyosGarc&eacute;s S.A. All rights reserved.</span>
+            <div>&copy; 2016 <strong>HoyosGarc&eacute;s S.A.</strong> All rights reserved.</div>
         </div>
     </footer>
     `,
