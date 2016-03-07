@@ -10,8 +10,11 @@ import {NgFor} from "angular2/common";
             <span class="company-name">
                 HoyosGarc&eacute;s
             </span>
-            <ul class="menu-items">
-                <li *ngFor="#item of navItems">
+            <ul id="nav-items">
+                <li id="nav-toggle" (click)="toggleNav()">
+                    <i class="fa fa-navicon"></i>
+                </li>
+                <li class="nav-collapse" *ngFor="#item of navItems">
                     <a href="{{ item.url }}">{{ item.label }}</a>
                 </li>
             </ul>
@@ -39,4 +42,8 @@ export class Nav {
         this.navItems.push(new NavItem(u, l));
     }
 
+    toggleNav() {
+        let cont = document.querySelector("#nav-items");
+        cont.classList.toggle("expand");
+    }
 }
