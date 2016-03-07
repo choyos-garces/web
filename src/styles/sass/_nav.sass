@@ -13,7 +13,6 @@ nav
 
   span
     font-family: "Museo Slab", sans-serif
-    font-weight: 500
 
   ul
     +absolute(0, auto, auto, 0)
@@ -40,34 +39,36 @@ nav.fixed
 @media screen and (max-width: 768px)
   nav
     ul
-      li#nav-toggle
-        display: block
-
       height: 56px
       overflow: hidden
       left: 0
 
+      li#nav-toggle
+        display: block
+        text-align: right
+
       li.nav-collapse
+        line-height: 30pt
+        font-size: 14px
         height: 0
 
     ul.expand
       height: auto
 
       li.nav-collapse
-        transition: height 300ms cubic-bezier(.17,.67,.83,.67)
-        height: 56px
+        transition: height 150ms cubic-bezier(.17,.67,.83,.67)
+        height: 30pt
 
     li
       color: inherit
       display: block
-      text-align: right
 
     li.nav-collapse
       padding-right: 24px
-      background-color: rgba(0,0,0,.3)
+      background-color: rgba(0,0,0,.5)
 
     li.nav-collapse:hover
-      background-color: rgba(0,0,0,.5)
+      background-color: rgba(0,0,0,.7)
 
   nav.fixed
     ul

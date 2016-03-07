@@ -30,13 +30,13 @@ import {ApiResponse} from "../Interface/ApiResponse";
                 </form>
             </div>
             <div id="contact-icons" class="text-center">
-                <a href="mailto:info@hoyosgarces.com">
+                <a href="mailto:info@hoyosgarces.com" title="info@hoyosgarces.com">
                     <i class="fa fa-envelope fa-2x"></i>
                 </a>
-                <a href="http://bit.ly/1St5z6u">
+                <a href="https://goo.gl/maps/Qamcir6pMjq">
                     <i class="fa fa-map fa-2x"></i>
                 </a>
-                <a href="#contact">
+                <a href="tel:+59342639290" title="+59342639290" value="+59342639290">
                     <i class="fa fa-phone-square fa-2x"></i>
                 </a>
             </div>
