@@ -20,6 +20,8 @@ $RECYCLE.BIN/
 # Project Ignores
 *.log
 .idea/workspace.xml
+dist/
+build/
 .sass-cache/
-/node_modules/
-/typings/
+node_modules/
+typings/
